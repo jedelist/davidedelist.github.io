@@ -45,16 +45,28 @@
               <br>
               <h2 style="color:#12d640">Universally Slimmable & Dynamically Resizable and DUCKNet for Real-Time Pharynx Segmentation</h2>
               <ul>
-                <li><strong>Tech Stack</strong>: Python, PyTorch, Albumentations, GitHub, NumPy, Matplotlib</li>
-                <li><strong>Final Paper URL</strong>: <a href="https://drive.google.com/file/d/1mmhnOIClCn6Dz6JzL2-KK9h42zMgcH-h/preview" target="_blank">Link</a></li>
-                <li><strong>Final Presentation URL</strong>: <a href="https://drive.google.com/file/d/14vl59J5d-u__amyRXxYVkT7XGoTNK-BS/preview" target="_blank">Link</a></li>
+                <li><strong>Tech Stack</strong>: Python, PyTorch, Albumentations, Matplotlib, GitHub, NumPy</li>
+                <li><strong>Paper URL</strong>: <a href="https://drive.google.com/file/d/1mmhnOIClCn6Dz6JzL2-KK9h42zMgcH-h/preview" target="_blank">Link</a></li>
+                <li><strong>Slideshow URL</strong>: <a href="https://drive.google.com/file/d/14vl59J5d-u__amyRXxYVkT7XGoTNK-BS/preview" target="_blank">Link</a></li>
                 <li><strong>Github URL</strong>: <a href="https://github.com/Aseeef/slimmable-medical-segmentation" target="_blank">Project Link</a></li>
               </ul>
               <p>
-                Fill in...            
+                Developed a universally slimmable and dynamically resizable DUCKNet and UNet segmentation architectures capable of real-time (17 Hz) inference 
+                during endoscopic procedures. This was done by implementing slimmable and universally slimmable architectures with dynamic resizing, knowledge distillation, and transfer
+                 learning. The trained models continuously adapted to hardware constraints while maintaining accurate larynx and hypopharynx segmentation. 
+                 These architectures allow for robust, efficient image analysis directly onsite, facilitating resource-aware medical diagnostics.
               </p>
               <p>
-                Fill in...             
+                Created universally slimmable convolutional, transposed convolutional, residual and batch
+                normalization modules to reconstruct DUCKNet and U-Net architectures for dynamic resizing during training and inference. 
+                The universally slimmable modules work by selectively and dynamically dropping weights to shrink the compute required for each 
+                layer within the neural network. Achieved 0.95 DICE score with models 20% of the the size of the original DUCKNet. 
+                In summary, we achieved state of the art performance with models 5 times smaller than the original DUCKNet model proposed in 
+                their paper.
+              </p>
+              <p>
+                Created training routines for the universally slimmble architectures using the "sandwich technique", knodwledge distillation,
+                and in-place student-teacher learning. 
               </p>
             </div>
   

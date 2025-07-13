@@ -47,27 +47,23 @@
               <ul>
                 <li><strong>Skills & Tools</strong>: C, Nvidia CUDA, OpenMP, BU Shared Computing Cluster, Nvidia Tesla K40m</li>
                 <li><strong>Github URL</strong>: <a href="https://github.com/jedelist/ALU_Calculator" target="_blank">Project Link</a></li>
-                <li><strong>Project Write Up URL</strong>: <a href="https://drive.google.com/file/d/1vruKnuJIa777i5W6ul6we1PjSZiUkmr3/preview" target="_blank">Link</a></li>
-                <li><strong>Project Presentation URL</strong>: <a href="https://docs.google.com/presentation/d/13z5wgtebFeQxeys0NskuD5KInKZCcGRaRqS4RxtRTU0/edit?usp=sharing" target="_blank">Google Slide</a></li>
+                <li><strong>Paper URL</strong>: <a href="https://drive.google.com/file/d/1vruKnuJIa777i5W6ul6we1PjSZiUkmr3/preview" target="_blank">Link</a></li>
+                <li><strong>Slideshow URL</strong>: <a href="https://docs.google.com/presentation/d/13z5wgtebFeQxeys0NskuD5KInKZCcGRaRqS4RxtRTU0/edit?usp=sharing" target="_blank">Google Slide</a></li>
               </ul>
-  
                 <p>
-                  T             
+                  Optimized the Floyd-Warshall all-pairs shortest path algorithm for both CPU and GPU architectures. Achieved over a 6 times speedup on the CPU 
+                  and 20 times speedup on the Nvidia Tesla K40m GPU. 
+                </p>
+                <p>Designed a tiled and milti-threaded version of the algorithm optimized for an 8-core CPU to improve cache locality and thread-level 
+                    parallelism using OpenMP while carefully respecting loop carried dependencies to maintain correctness.
                 </p>
                 <p>
-                  B
+                  On the GPU, I designed a CUDA implementation using GPU global memory, launching the CUDA kernel 
+                  within a loop over k (the outermost loop) to respect loop carried data dependencies. For parallelism and further acceleration, 
+                  the CUDA kernel flattend the inner loops to leverage massive thread-level and block-level parallelism.  
                 </p>
                 <p>
-                  B
-                </p>
-                <p>
-                  B
-                </p>
-                <p>
-                  F
-                </p>
-                <p>
-                  A
+                  Gained valuable experience in memory hierarchy, multi-threaded programming, CUDA, synchronization, and parallel algorithm design.
                 </p>
             </div>
   
